@@ -13,10 +13,11 @@ browser.on("error", function(error) {
 
 browser.visit("http://localhost:3000/").
   then(function() {
-//    assert.equal(browser.text("title"), "first");
-    console.log("done");
-    process.exit(0);
-  
+    assert.equal(browser.text("title"), "ztest");
+  }).
+  fail(function(error) {
+    console.log("Oops", error);
+    process.exit(0); 
   });
 
 
