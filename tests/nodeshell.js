@@ -13,8 +13,8 @@ browser.on("error", function(error) {
 
 browser.visit("http://localhost:3000/?_escaped_fragment_=").
   then(function() {
-    assert.equal(browser.text("title"), "ztest");
-//      assert.ok(browser.query("#greet"));  
+//    assert.equal(browser.text("title"), "ztest");
+      assert.ok(browser.query("#greet"));  
   }).
   fail(function(error) {
     console.log("Oops", error);
