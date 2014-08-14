@@ -11,13 +11,14 @@ browser.on("error", function(error) {
    process.exit(1);
 })
 
-browser.visit("http://localhost:3000/").
+browser.visit("http://localhost:3000/?_escaped_fragment_=").
   then(function() {
-    assert.equal(browser.text("title"), "ztest");
+//    assert.equal(browser.text("title"), "ztest");
+      assert.ok(browser.query("#greet"));  
   }).
   fail(function(error) {
     console.log("Oops", error);
-    process.exit(0); 
+    process.exit(1); 
   });
 
 
