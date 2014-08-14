@@ -1,3 +1,5 @@
+console.log("starting zombie tests");
+
 var Browser = require("zombie");
 var assert = require("assert");
 
@@ -12,7 +14,7 @@ browser.on("error", function(error) {
 browser.visit("http://localhost:3000/").
   then(function() {
 //    assert.equal(browser.text("title"), "first");
-//    console.log("done");
+    console.log("done");
     process.exit(0);
   
   });
