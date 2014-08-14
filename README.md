@@ -1,4 +1,4 @@
 ztest
 =====
 
-test repo for zombie integration
+test repo for zombie integration test
