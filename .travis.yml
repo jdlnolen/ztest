@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "0.10"
+before_install:
+  - "curl -L https://raw.githubusercontent.com/jdlnolen/zombie/master/configure.sh | /bin/sh"
+  - "mrt"
+services:
+  - mongodb
