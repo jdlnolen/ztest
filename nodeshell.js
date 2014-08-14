@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var Browser = require("zombie");
 var assert = require("assert");
 
