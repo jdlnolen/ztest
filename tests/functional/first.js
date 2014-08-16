@@ -7,8 +7,10 @@ var assert = require("assert");
 browser = new Browser();
 
 describe('home page', function() {
-   before(function() {
+
+   before(function(done) {
      this.browser = new Browser({ site: 'http://localhost:3000' });
+     done();
    });
 
   before(function(done) {
