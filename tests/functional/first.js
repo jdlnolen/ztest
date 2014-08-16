@@ -18,7 +18,6 @@ describe('home page', function() {
    });
 
    it('should show a greeting', function() {
-       console.log(this.browser.html());
        assert.equal(this.browser.text('#greet'), 'Hello World!');
    });
 });
