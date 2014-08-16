@@ -6,3 +6,5 @@ before_install:
   - "mrt &"
 services:
   - mongodb
+env:
+  - MOCHA_OPTIONS="tests/functional/first.js --timeout 5000"
