@@ -4,6 +4,6 @@ node_js:
 before_install:
   - "curl -L https://raw.githubusercontent.com/jdlnolen/zombie/master/configure.sh | /bin/sh"
   - "mrt &"
-script: node tests/nodeshell.js
+script: mocha tests/functional/first.js
 services:
   - mongodb
