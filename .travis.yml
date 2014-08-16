@@ -6,6 +6,6 @@ before_install:
 services:
   - mongodb
 before_script:
-  - mrt
+  - mrt & 
   - sleep 3
 script: ./run.sh
