@@ -6,5 +6,4 @@ before_install:
   - "mrt &"
 services:
   - mongodb
-script: 
-  - run.sh
+script: ./run.sh
