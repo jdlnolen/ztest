@@ -7,5 +7,5 @@ services:
   - mongodb
 before_script:
   - mrt & 
-  - sleep 3
+  - sleep 10
 script: ./run.sh
