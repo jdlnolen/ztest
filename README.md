@@ -19,15 +19,17 @@ The following commands work:
 
 Setup Commands
 
-```javascript
+```
 git clone https://github.com/meteor/meteor.git ~/meteor
 export PATH=~/meteor/:$PATH
 npm install -g meteorite mocha zombie
 METEOR_PATH=~/meteor
 mrt update
 nohup bash -c "mrt 2>&1 &" && sleep 60; cat nohup.out
+```
 
 Test Commands
 
+```
 mocha tests/functional/*.js --timeout 10000
-'''
+```
