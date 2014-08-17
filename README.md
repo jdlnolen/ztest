@@ -5,7 +5,25 @@ ztest
 
 [ ![Codeship Status for jdlnolen/ztest](https://codeship.io/projects/4c7e2d70-07a1-0132-c4dc-1a75e65bd607/status)](https://codeship.io/projects/31284)
 
-Test repo for zombie integration test. 
+This is a test repo for functional testing a meteor app with zombie.js (http://zombie.labnotes.org/). Uses a very simple test of the DOM on the home page. 
+
+Running Locally
+---------------
+
+The only pre-reqs are zombie and mocha (install via npm):
+
+```
+npm install -g zombie
+
+npm install -g mocha
+
+```
+
+After those are in place, you should be able to run ./run.sh to get mocha and zombie to run. 
+
+If you need a dev environment to start, here is vagrant file for meteor:
+
+https://github.com/jdlnolen/meteorbox
 
 Travis-CI
 ---------
