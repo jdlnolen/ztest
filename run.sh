@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mocha tests/functional/first.js --timeout 5000
+mocha tests/functional/*.js --timeout 5000
