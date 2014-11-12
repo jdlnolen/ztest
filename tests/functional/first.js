@@ -14,7 +14,7 @@ describe('home page', function() {
    });
 
   before(function(done) {
-     this.browser.visit('/?_escaped_fragment_=',done);
+     this.browser.visit('/',done);
    });
 
    it('should show a greeting', function() {
