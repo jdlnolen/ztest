@@ -38,12 +38,14 @@ The following commands work:
 Setup Commands
 
 ```
-git clone https://github.com/meteor/meteor.git ~/meteor
-export PATH=~/meteor/:$PATH
-npm install -g meteorite mocha zombie
-METEOR_PATH=~/meteor
-mrt update
-nohup bash -c "mrt 2>&1 &" && sleep 60; cat nohup.out
+npm update
+npm install zombie mocha -g
+curl -o meteor_install_script.sh https://install.meteor.com/
+chmod +x meteor_install_script.sh
+sed -i "s/type sudo >\/dev\/null 2>&1/\ false /g" meteor_install_script.sh
+./meteor_install_script.sh
+export PATH=$PATH:~/.meteor/
+nohup bash -c "meteor 2>&1 &" && sleep 60; cat nohup.out
 ```
 
 Test Commands
